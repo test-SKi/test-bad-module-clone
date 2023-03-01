@@ -12,3 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: devops-testbed/checkout@main
+  shr-fix:
+    runs-on: self-hosted
+    steps:
+      - uses: devops-testbed/checkout@main
+        with:
+          clean: true
+          submodules: true
