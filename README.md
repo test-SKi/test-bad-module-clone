@@ -1,5 +1,4 @@
-# test-bad-module
-
+[![test-checkout](https://github.com/test-SKi/test-bad-module/actions/workflows/blank.yml/badge.svg)](https://github.com/test-SKi/test-bad-module/actions/workflows/blank.yml)
 
 ```
 export USER=test-SKi
