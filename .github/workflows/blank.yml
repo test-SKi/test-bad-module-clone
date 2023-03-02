@@ -1,4 +1,4 @@
-name: test-checkout
+name: actions-checkout-main-ghr
 on:
   push:
   pull_request:
@@ -6,8 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    #permissions:
-    #  repository-projects: write 
     steps:
       - uses: actions/checkout@main
   noperms:
