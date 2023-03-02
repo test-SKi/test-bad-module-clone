@@ -25,3 +25,9 @@ jobs:
       - uses: devops-testbed/checkout@main
         with:
           clean: true
+  shr-action:
+    runs-on: self-hosted
+    steps:
+      - uses: action/checkout@main
+        with:
+          clean: true
