@@ -31,3 +31,7 @@ jobs:
       - uses: actions/checkout@main
         with:
           clean: true
+  shr-fix-nooptions:
+    runs-on: self-hosted
+    steps:
+      - uses: devops-testbed/checkout@main
