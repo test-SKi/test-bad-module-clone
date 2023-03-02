@@ -25,9 +25,3 @@ jobs:
       - uses: devops-testbed/checkout@main
         with:
           clean: true
-  shr-fix3:
-    runs-on: self-hosted
-    steps:
-      - uses: devops-testbed/checkout@main
-        with:
-          submodules: true
