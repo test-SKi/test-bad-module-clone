@@ -1,4 +1,4 @@
-name: self-hosted-runner
+name: self-hosted-runner-megamanics
 on:
   push:
   pull_request:
