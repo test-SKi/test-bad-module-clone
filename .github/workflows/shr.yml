@@ -1,4 +1,4 @@
-name: compare-runners
+name: self-hosted-runner
 on:
   push:
   pull_request:
@@ -25,9 +25,9 @@ jobs:
       - uses: devops-testbed/checkout@main
         with:
           clean: true
-  shr-action:
+  shr-action-checkout:
     runs-on: self-hosted
     steps:
-      - uses: action/checkout@main
+      - uses: actions/checkout@main
         with:
           clean: true
