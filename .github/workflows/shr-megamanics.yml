@@ -1,0 +1,35 @@
+name: self-hosted-runner-megamanics
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  ghr-actions-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+  ghr-devops-testbed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: megamanics/checkout@main
+  shr-action-checkout:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@main
+  shr-megamanics:
+    runs-on: self-hosted
+    steps:
+      - uses: megamanics/checkout@main
+  shr-dmegamanics-true-false:
+    runs-on: self-hosted
+    steps:
+      - uses: megamanics/checkout@main
+        with:
+          clean: true
+          submodules: false
+  shr-megamanics-true:
+    runs-on: self-hosted
+    steps:
+      - uses: megamanics/checkout@main
+        with:
+          clean: true

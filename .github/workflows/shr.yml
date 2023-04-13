@@ -1,0 +1,35 @@
+name: self-hosted-runner
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  ghr-actions-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+  ghr-devops-testbed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: devops-testbed/checkout@main
+  shr-action-checkout:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@main
+  shr-devops-testbed:
+    runs-on: self-hosted
+    steps:
+      - uses: devops-testbed/checkout@main
+  shr-devops-testbed-true-false:
+    runs-on: self-hosted
+    steps:
+      - uses: devops-testbed/checkout@main
+        with:
+          clean: true
+          submodules: false
+  shr-devops-testbed-true:
+    runs-on: self-hosted
+    steps:
+      - uses: devops-testbed/checkout@main
+        with:
+          clean: true

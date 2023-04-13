@@ -1,4 +1,4 @@
-[![test-checkout](https://github.com/test-SKi/test-bad-module/actions/workflows/blank.yml/badge.svg)](https://github.com/test-SKi/test-bad-module/actions/workflows/blank.yml)
+[![self-hosted-runner-megamanics](https://github.com/test-SKi/test-bad-module/actions/workflows/shr-megamanics.yml/badge.svg)](https://github.com/test-SKi/test-bad-module/actions/workflows/shr-megamanics.yml)
 
 ```
 git checkout -b new
@@ -8,3 +8,4 @@ git add .
 git commit
 git push --set-upstream origin new
 ```
+
